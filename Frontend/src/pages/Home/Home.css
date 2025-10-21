@@ -143,12 +143,12 @@
 }
 
 .feature-card img {
-  width: 180px;  /* Much bigger - increased from 80px */
-  height: 180px; /* Much bigger - increased from 80px */
+  width: 250px;  /* Much bigger - increased from 180px */
+  height: 250px; /* Much bigger - increased from 180px */
   object-fit: cover;
-  border-radius: 20px; /* Changed from circular to rounded rectangle */
+  border-radius: 20px;
   margin-bottom: 1.5rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Added shadow to images */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 
@@ -227,8 +227,8 @@
   }
 
   .feature-card img {
-    width: 140px;  /* Much bigger for mobile - increased from 60px */
-    height: 140px; /* Much bigger for mobile - increased from 60px */
+    width: 200px;  /* Much bigger for mobile - increased from 140px */
+    height: 200px; /* Much bigger for mobile - increased from 140px */
   }
 
   .feature-card h3 {
