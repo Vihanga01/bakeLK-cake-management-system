@@ -20,7 +20,7 @@
 .home-hero {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 83vh;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -132,7 +132,8 @@
 
 .hero-image img {
   max-width: 100%;
-  height: auto;
+  max-height: 480px;
+  /*height: auto;*/
   border-radius: 20px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   border: 3px solid rgba(255, 255, 255, 0.8);
@@ -140,7 +141,7 @@
 
 /* Features Section */
 .home-features {
-  background: white;
+  background: #f2f2fd;
   padding: 4rem 0;
 }
 
@@ -165,7 +166,7 @@
 }
 
 .feature-card {
-  background: linear-gradient(135deg, #f0f8ff, #e6f3ff); /* Light blue gradient */
+  background: linear-gradient(135deg, #f1f8fe, #eaf5ff); /* Light blue gradient */
   padding: 2rem;
   border-radius: 15px;
   text-align: center;
