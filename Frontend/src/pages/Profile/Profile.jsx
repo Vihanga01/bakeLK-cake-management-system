@@ -172,7 +172,7 @@ const Profile = () => {
                         {new Date(order.date).toLocaleDateString()}
                       </div>
                       <div className="history-amount">
-                        Order: Rs. {order.totalAmount.toLocaleString()}
+                        Order: Rs. {order.totalAmount?.toLocaleString() || '0'}
                       </div>
                     </div>
                     <div className="history-points">
