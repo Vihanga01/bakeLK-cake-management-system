@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  min-height: 100vh;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes  fadeIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+/* Bake.lk green theme utilities */
+:root{
+	--brand-bg:#f0fdf4;
+	--brand-surface:#ffffff;
+	--brand-primary:#16a34a;
+	--brand-accent:#34d399;
+	--brand-text:#0f172a;
+	--brand-muted:#64748b;
+}
+
+.bl-card{
+	background:linear-gradient(180deg,#fff,#f6fff9);
+	border:1px solid rgba(22,163,74,.12);
+	border-radius:16px;
+	box-shadow:0 10px 24px rgba(2,6,23,.06);
+	padding:16px;
+}
+
+.bl-btn{
+	background:linear-gradient(90deg,var(--brand-primary),var(--brand-accent));
+	color:#fff;
+	border:none;
+	border-radius:12px;
+	padding:10px 16px;
+	font-weight:600;
+	cursor:pointer;
+	box-shadow:0 10px 18px rgba(52,211,153,.28);
+	transition:filter .15s ease, box-shadow .15s ease;
+}
+.bl-btn:hover{filter:brightness(.98);box-shadow:0 12px 22px rgba(52,211,153,.34)}
+.bl-btn:disabled{opacity:.7;cursor:not-allowed}
+
+.bl-badge{
+	display:inline-block;
+	background:rgba(22,163,74,.08);
+	color:#166534;
+	border:1px solid rgba(22,163,74,.16);
+	padding:4px 10px;
+	border-radius:999px;
+	font-size:12px;
+	font-weight:600;
+}
+
+.bl-input{
+	background:#fff;
+	border:1px solid rgba(2,6,23,.12);
+	border-radius:12px;
+	padding:10px 12px;
+	outline:none;
+	transition:box-shadow .15s ease, border-color .15s ease;
+}
+.bl-input:focus{border-color:#34d399;box-shadow:0 0 0 4px rgba(52,211,153,.22)}

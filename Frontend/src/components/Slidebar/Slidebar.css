@@ -1,0 +1,314 @@
+/* Sidebar Container */
+.sidebar {
+    width: 18%; /* Default sidebar width for large screens */
+    min-height: 100vh;
+    background: linear-gradient(180deg, #f8f9fa 0%, #f1f3f4 100%); /* Subtle gradient background */
+    border-right: 1px solid #dee2e6; /* Cleaner border */
+    padding: 20px 15px; /* Better padding */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05); /* Softer shadow */
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease; /* Smooth transitions */
+    overflow: hidden; /* Hide overflow during transitions */
+    position: relative;
+}
+
+/* Collapsed sidebar state */
+.sidebar.collapsed {
+    width: 80px; /* Collapsed width */
+    padding: 20px 10px; /* Reduced padding when collapsed */
+}
+
+/* Sidebar Header */
+.sidebar-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(36, 150, 181, 0.1);
+    border: 1px solid rgba(36, 150, 181, 0.2);
+}
+
+.toggle-btn:hover {
+    background-color: rgba(36, 150, 181, 0.2);
+    border-color: rgba(36, 150, 181, 0.3);
+    transform: scale(1.05);
+}
+
+.toggle-btn:active {
+    transform: scale(0.95);
+}
+
+/* Collapse Icon Styling */
+.collapse-icon {
+    color: #2496b5;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover .collapse-icon {
+    color: #1e88a8;
+}
+
+/* Sidebar Options Container */
+.sildebar-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Reduced space between options */
+    padding-top: 10px; /* Reduced top padding since we have header now */
+}
+
+/* Sidebar Option Styling */
+.sidebar-option {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icon and text */
+    padding: 12px 16px; /* Better padding for cleaner look */
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* More rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth transitions */
+    cursor: pointer;
+    text-decoration: none; /* Remove default link styling */
+    color: #333; /* Dark text color */
+    border: 2px solid transparent; /* Invisible border for smooth transitions */
+    margin-bottom: 8px; /* Space between options */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+}
+
+/* Collapsed sidebar option styling */
+.sidebar.collapsed .sidebar-option {
+    padding: 12px; /* Center padding when collapsed */
+    justify-content: center; /* Center the icon */
+    gap: 0; /* No gap when collapsed */
+}
+
+/* Hide text when collapsed */
+.sidebar-option p.hidden {
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    position: absolute;
+    pointer-events: none;
+}
+
+/* Show text when expanded */
+.sidebar-option p {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 0.4s ease 0.1s, transform 0.4s ease 0.1s; /* Delayed transition for smoother effect */
+}
+
+/* Hover Effect for Sidebar Option */
+.sidebar-option:hover {
+    background-color: #f8f9fa; /* Very light grey on hover */
+    transform: translateY(-1px); /* Subtle lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12); /* Enhanced shadow on hover */
+    text-decoration: none; /* Remove underline on hover */
+    border-color: #e9ecef; /* Light border on hover */
+}
+
+/* Active Sidebar Option Styling */
+.sidebar-option.active {
+    background: linear-gradient(135deg, #2496b5, #1e88a8); /* Gradient background */
+    color: #fff; /* White text when active */
+    font-weight: 600; /* Semi-bold text */
+    transform: translateY(-1px); /* Keep the lifted position when active */
+    box-shadow: 0 4px 12px rgba(36, 150, 181, 0.3); /* Colored shadow for depth */
+    border-color: transparent; /* No border when active */
+}
+
+.sidebar-option.active p {  
+    color: white;
+    font-weight: 600;
+}
+
+/* Sidebar Option Icon - Base styling */
+.sidebar-option img {
+    width: 22px; /* Slightly smaller icon size */
+    height: 22px;
+    object-fit: contain;
+    transition: all 0.3s ease; /* Smooth icon transitions */
+    filter: none; /* Default no filter */
+}
+
+/* Icon hover effect */
+.sidebar-option:hover img {
+    transform: scale(1.1); /* Slight scale on hover */
+    filter: brightness(1.1); /* Slight brightness increase on hover */
+}
+
+/* Adjusting icon color when active */
+.sidebar-option.active img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%); /* Clean white conversion */
+    opacity: 0.95; /* Slight transparency for softer look */
+    transform: scale(1.05); /* Slight scale for emphasis */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Focus state for accessibility */
+.sidebar-option:focus {
+    outline: 2px solid #2496b5;
+    outline-offset: 2px;
+}
+
+/* Tooltip for collapsed state */
+.sidebar.collapsed .sidebar-option {
+    position: relative;
+}
+
+.sidebar.collapsed .sidebar-option::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    margin-left: 10px;
+    pointer-events: none;
+}
+
+.sidebar.collapsed .sidebar-option::before {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-right-color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 1000;
+    margin-left: 4px;
+}
+
+.sidebar.collapsed .sidebar-option:hover::after,
+.sidebar.collapsed .sidebar-option:hover::before {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Sidebar Option Text */
+.sidebar-option p {
+    font-size: 0.95rem; /* Slightly smaller font size */
+    color: #495057; /* Better contrast color */
+    margin: 0; /* No margin for clean layout */
+    font-weight: 500; /* Medium font weight */
+    transition: color 0.3s ease; /* Smooth text color transitions */
+}
+
+/* Responsive Design */
+
+/* Larger Tablets & Small Laptops (1024px and below) */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 22%; /* Slightly wider sidebar for medium devices */
+    }
+    .sidebar.collapsed {
+        width: 70px; /* Smaller collapsed width for tablets */
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 30%; /* Increase sidebar width for smaller devices */
+    }
+    .sidebar.collapsed {
+        width: 60px; /* Smaller collapsed width for mobile */
+    }
+    .sidebar-option {
+        padding: 8px 12px; /* Reduce padding for tablets */
+        gap: 10px; /* Reduce gap between icon and text */
+    }
+    .sidebar.collapsed .sidebar-option {
+        padding: 8px; /* Adjust collapsed padding */
+    }
+}
+
+/* Small Tablets & Large Phones (600px and below) */
+@media (max-width: 600px) {
+    .sidebar {
+        width: 35%; /* Expand sidebar for smaller devices */
+        padding: 10px 8px; /* Adjust padding */
+    }
+    .sidebar.collapsed {
+        width: 55px; /* Very small collapsed width */
+        padding: 10px 5px;
+    }
+    .sidebar-option {
+        padding: 8px 10px; /* Reduce padding */
+        gap: 8px; /* Closer icon and text */
+        font-size: 0.95rem; /* Slightly reduce font size */
+    }
+    .sidebar.collapsed .sidebar-option {
+        padding: 6px; /* Minimal padding when collapsed */
+    }
+}
+
+/* Phones (480px and below) */
+@media (max-width: 480px) {
+    .sidebar {
+        width: 40%; /* Full-width sidebar for mobile devices */
+        padding: 10px 5px; /* Adjust padding */
+    }
+    .sidebar.collapsed {
+        width: 50px; /* Minimal collapsed width */
+    }
+    .sidebar-option {
+        padding: 6px 8px; /* Tighter padding for mobile */
+        gap: 8px; /* Smaller gap between icon and text */
+        font-size: 0.9rem; /* Adjust font size for mobile */
+    }
+    .sidebar.collapsed .sidebar-option {
+        padding: 5px; /* Very tight padding */
+    }
+    .sidebar-option img {
+        width: 20px; /* Smaller icon size for mobile */
+        height: 20px;
+    }
+    
+    /* Hide tooltips on mobile to prevent overflow */
+    .sidebar.collapsed .sidebar-option::after,
+    .sidebar.collapsed .sidebar-option::before {
+        display: none;
+    }
+}
+
+/* Extra Small Devices (320px and below) */
+@media (max-width: 320px) {
+    .sidebar {
+        width: 50%; /* Almost full width for very small devices */
+    }
+    .sidebar.collapsed {
+        width: 45px; /* Ultra minimal collapsed width */
+    }
+    .sidebar-option p {
+        font-size: 0.85rem; /* Smallest font size */
+    }
+}

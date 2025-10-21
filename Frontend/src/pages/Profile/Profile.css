@@ -1,0 +1,318 @@
+:root {
+  --brand-bg: #f0fdf4;
+  --brand-surface: #ffffff;
+  --brand-primary: #16a34a;
+  --brand-primary-600: #15803d;
+  --brand-accent: #34d399;
+  --brand-text: #0f172a;
+  --brand-subtle: #64748b;
+  --silver: #94a3b8;
+  --gold: #fbbf24;
+  --platinum: #8b5cf6;
+}
+
+.profile-page {
+  background: radial-gradient(1200px 800px at 100% -100%, rgba(52, 211, 153, 0.18), transparent 60%),
+              radial-gradient(1000px 700px at -20% -60%, rgba(22, 163, 74, 0.12), transparent 60%),
+              var(--brand-bg);
+  min-height: 100vh;
+  padding: 32px 16px;
+}
+
+.profile-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.profile-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--brand-text);
+  margin-bottom: 8px;
+}
+
+.profile-subtitle {
+  font-size: 16px;
+  color: var(--brand-subtle);
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profile-card {
+  background: var(--brand-surface);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(22, 163, 74, 0.1);
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.user-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--brand-primary) 0%, var(--brand-accent) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+}
+
+.avatar-text {
+  text-transform: uppercase;
+}
+
+.user-details h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--brand-text);
+  margin: 0 0 4px 0;
+}
+
+.user-email {
+  font-size: 14px;
+  color: var(--brand-subtle);
+  margin: 0;
+}
+
+.loyalty-card {
+  background: var(--brand-surface);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(22, 163, 74, 0.1);
+}
+
+.loyalty-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.loyalty-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--brand-text);
+  margin: 0;
+}
+
+.loyalty-level-badge {
+  background: linear-gradient(135deg, var(--gold) 0%, #f59e0b 100%);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.loyalty-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 16px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.stat-label {
+  display: block;
+  font-size: 12px;
+  color: var(--brand-subtle);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--brand-text);
+}
+
+.progress-section {
+  margin-bottom: 24px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.progress-text {
+  font-size: 14px;
+  color: var(--brand-subtle);
+  font-weight: 500;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e2e8f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-accent) 100%);
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+
+.history-card {
+  background: var(--brand-surface);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(22, 163, 74, 0.1);
+}
+
+.history-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--brand-text);
+  margin: 0 0 20px 0;
+}
+
+.no-history {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--brand-subtle);
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+}
+
+.history-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.history-date {
+  font-size: 12px;
+  color: var(--brand-subtle);
+}
+
+.history-amount {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brand-text);
+}
+
+.history-points {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--brand-primary);
+}
+
+.history-status {
+  display: flex;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.pending {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status-badge.confirmed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.shipped {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status-badge.delivered {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 16px;
+  color: var(--brand-subtle);
+}
+
+.error {
+  color: #dc2626;
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 16px 8px;
+  }
+  
+  .loyalty-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .redeem-controls {
+    flex-direction: column;
+  }
+  
+  .history-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .history-info {
+    width: 100%;
+  }
+}

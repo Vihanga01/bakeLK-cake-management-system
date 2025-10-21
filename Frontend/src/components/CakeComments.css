@@ -1,0 +1,258 @@
+.cake-comments {
+  margin-top: 32px;
+}
+
+.cc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.cc-download-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: linear-gradient(180deg,#fff,#f8fafc);
+  font-weight: 700;
+  color: #111827;
+  cursor: pointer;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+
+.cc-download-btn:hover {
+  transform: translateY(-1px);
+  filter: brightness(.98);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+}
+
+.cc-title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cc-form {
+  display: grid;
+  gap: 10px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.05);
+}
+
+.cc-form textarea {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 10px 12px;
+  outline: none;
+  resize: vertical;
+}
+
+.cc-form-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn {
+  padding: 8px 12px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #111827;
+}
+
+.btn.primary {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: #ffffff;
+}
+
+.btn.secondary {
+  background: #ffffff;
+  color: #111827;
+}
+
+.btn.icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.cc-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.cc-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  padding: 12px;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.05);
+}
+
+.cc-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cc-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cc-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.cc-user-meta {
+  display: grid;
+  line-height: 1.2;
+}
+
+.cc-username {
+  font-weight: 600;
+}
+
+.cc-date {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.cc-text {
+  margin-top: 8px;
+}
+
+.cc-actions {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.cc-replies {
+  margin-top: 10px;
+  padding-left: 14px;
+  border-left: 2px solid #eee;
+}
+
+.cc-reply-item {
+  background: #fafafa;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+}
+
+.cc-reply-form {
+  margin-top: 8px;
+  display: grid;
+  gap: 6px;
+}
+
+.cc-stars {
+  display: flex;
+  gap: 4px;
+}
+
+.cc-star {
+  cursor: pointer;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.cc-star.active {
+  color: #f59e0b;
+}
+
+@media (max-width: 640px) {
+  .cc-form, .cc-card { padding: 10px; }
+  .cc-avatar { width: 32px; height: 32px; font-size: 12px; }
+}
+
+/* Image Upload Styles */
+.cc-image-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.cc-image-btn {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  color: #374151;
+  transition: all 0.2s;
+}
+
+.cc-image-btn:hover {
+  background: #e5e7eb;
+  border-color: #9ca3af;
+}
+
+.cc-image-preview {
+  position: relative;
+  display: inline-block;
+  max-width: 200px;
+}
+
+.cc-image-preview img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
+.cc-remove-image {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ef4444;
+  color: white;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.cc-remove-image:hover {
+  background: #dc2626;
+}
+
+.cc-comment-image {
+  margin-top: 8px;
+}
+
+.cc-comment-image img {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
