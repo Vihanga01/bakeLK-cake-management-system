@@ -2,6 +2,9 @@ import basket_icon from "./basket_icon.png";
 import logo from "/logo/logo1.png";
 import header_img from "./header_img.png";
 import search_icon from "./search_icon.png";
+import fresh_ingredients from "./fresh ingrediants.png";
+import homemade from "./homemade.png";
+import fast_delivery from "./fast delivery.png";
 // import menu_1 from "./menu_1.png";
 // import menu_2 from "./menu_2.png";
 // import menu_3 from "./menu_3.png";
@@ -41,6 +44,9 @@ export const assets = {
   logout_icon,
   bag_icon,
   parcel_icon,
+  menu_1: fresh_ingredients,
+  menu_2: homemade,
+  menu_3: fast_delivery,
 };
 
 // export const menu_list = [
