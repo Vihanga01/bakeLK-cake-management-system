@@ -1,6 +1,6 @@
 /* Popular Cakes Section Styles */
 .popular-cakes-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f093fb 50%, #f5576c 75%, #4facfe 100%);
+  background: linear-gradient(135deg, #FFB8B6 10%, #75C7E4 50%, #FFB8B6 50%);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
   padding: 4rem 0;
@@ -17,9 +17,9 @@
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.2) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(255, 184, 182, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(117, 199, 228, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(255, 184, 182, 0.2) 0%, transparent 50%);
   animation: float 20s ease-in-out infinite;
 }
 
@@ -139,13 +139,14 @@
 .popular-section-title {
   font-size: 3rem;
   font-weight: bold;
-  background: linear-gradient(45deg, #FFD700, #FFA500, #FF6B35);
+  background: linear-gradient(45deg, #2c3e50, #1f2a38, #3b4a5a);
+
+
   background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   margin-bottom: 1rem;
-  text-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
   animation: textGlow 3s ease-in-out infinite;
   position: relative;
 }
@@ -158,9 +159,10 @@
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  background: linear-gradient(90deg, transparent, #FFD700, transparent);
+  background: linear-gradient(90deg, transparent, #2c3e50, #3b3b98, #182C61, transparent);
   border-radius: 2px;
 }
+
 
 .section-subtitle {
   font-size: 1.2rem;
@@ -354,14 +356,14 @@
 .cake-name {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #2C3E50;
+  color: #2c3e50;
   margin: 0 0 0.5rem 0;
   line-height: 1.3;
 }
 
 .cake-category {
   font-size: 0.9rem;
-  color: #7F8C8D;
+  color: #2c3e50;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -407,12 +409,12 @@
 .stat-number {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #2C3E50;
+  color: #2c3e50;
 }
 
 .stat-label {
   font-size: 0.8rem;
-  color: #7F8C8D;
+  color: #2c3e50;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
