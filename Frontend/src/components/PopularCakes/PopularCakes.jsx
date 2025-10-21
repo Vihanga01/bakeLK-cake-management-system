@@ -317,7 +317,7 @@ const PopularCakes = () => {
 
         <div className="section-footer">
           <Link to="/products" className="view-all-btn">
-            View All Cakes →
+            View All Cakes
           </Link>
         </div>
       </div>
