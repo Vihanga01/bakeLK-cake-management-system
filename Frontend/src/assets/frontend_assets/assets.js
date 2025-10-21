@@ -1,6 +1,7 @@
 import basket_icon from "./basket_icon.png";
 import logo from "/logo/logo1.png";
 import header_img from "./header_img.png";
+import home_full from "./home_full.png";
 import search_icon from "./search_icon.png";
 import fresh_ingredients from "./fresh ingrediants.png";
 import homemade from "./homemade.png";
@@ -31,6 +32,7 @@ export const assets = {
   logo,
   basket_icon,
   header_img,
+  home_full,
   search_icon,
   rating_starts,
   add_icon_green,

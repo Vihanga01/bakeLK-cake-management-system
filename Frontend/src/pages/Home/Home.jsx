@@ -25,7 +25,7 @@ const Home = ({ setShowLogin }) => {
           </div>
         </div>
         <div className="hero-image">
-          <img src={assets.header_img} alt="Delicious Cakes" />
+          <img src={assets.home_full} alt="Delicious Cakes" />
         </div>
       </div>
 
