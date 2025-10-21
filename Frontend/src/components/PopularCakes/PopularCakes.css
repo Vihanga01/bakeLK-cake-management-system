@@ -1,6 +1,6 @@
 /* Popular Cakes Section Styles */
 .popular-cakes-section {
-  background: linear-gradient(135deg, #FFB8B6 10%, #75C7E4 50%, #FFB8B6 50%);
+  background: linear-gradient(135deg, #ffd9d7 10%, #a4d2e3 50%, #ffd9d7 50%);
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
   padding: 4rem 0;
@@ -166,9 +166,8 @@
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: white;
+  color: #2c3e50;
   font-weight: 500;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   opacity: 0.9;
 }
 
