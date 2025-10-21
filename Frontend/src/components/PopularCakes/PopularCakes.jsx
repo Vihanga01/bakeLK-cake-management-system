@@ -166,7 +166,7 @@ const PopularCakes = () => {
             <div className="header-icon">
               <span className="house-icon">🏠</span>
             </div>
-            <h2 className="section-title">Our Most Loved Cakes</h2>
+            <h2 className="popular-section-title">Our Most Loved Cakes</h2>
             <p className="section-subtitle">Discover the cakes our customers can't get enough of!</p>
           </div>
           <div className="loading-container">
@@ -186,7 +186,7 @@ const PopularCakes = () => {
             <div className="header-icon">
               <span className="house-icon">🏠</span>
             </div>
-            <h2 className="section-title">Our Most Loved Cakes</h2>
+            <h2 className="popular-section-title">Our Most Loved Cakes</h2>
             <p className="section-subtitle">Discover the cakes our customers can't get enough of!</p>
           </div>
           <div className="error-container">
@@ -206,7 +206,7 @@ const PopularCakes = () => {
             <div className="header-icon">
               <span className="house-icon">🏠</span>
             </div>
-            <h2 className="section-title">Our Most Loved Cakes</h2>
+            <h2 className="popular-section-title">Our Most Loved Cakes</h2>
             <p className="section-subtitle">Discover the cakes our customers can't get enough of!</p>
           </div>
           <div className="no-cakes">
@@ -231,7 +231,7 @@ const PopularCakes = () => {
           >
             <span className="house-icon">🏠</span>
           </div>
-          <h2 className="section-title">Our Most Loved Cakes</h2>
+          <h2 className="popular-section-title">Our Most Loved Cakes</h2>
           <p className="section-subtitle">Discover the cakes our customers can't get enough of!</p>
         </div>
 
